@@ -1,0 +1,9 @@
+applications:
+- api_domain: api.staging.jit.io
+  application_name: foo
+  auth_header_name: Authorization
+  auth_header_value: encrypted$AQICAHhpFcIXIhU6d93x5dEW8mdH+GAoJET0G2RkVqkI5vH/4QEKAWuJzdz7QXY/OU0Sp+bfAAAAaTBnBgkqhkiG9w0BBwagWjBYAgEAMFMGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMdseA9ggmqcU17tvWAgEQgCZxXnu+Lo6OvEqw7kr7WuhUfPfBji3KVQuDTZYdtMs4iu/5X+txEQ==
+  authentication_mode: header-bearer
+  exclude_paths: []
+  target_url: https://api.staging.jit.io/openapi.json
+  type: api
