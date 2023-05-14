@@ -2,8 +2,10 @@ applications:
 - api_domain: api.staging.jit.io
   application_name: foo
   auth_header_name: Cookie
-  auth_header_value: encrypted$AQICAHhpFcIXIhU6d93x5dEW8mdH+GAoJET0G2RkVqkI5vH/4QHGoG7hPmRSL3KeGvGxUPLiAAAAYTBfBgkqhkiG9w0BBwagUjBQAgEAMEsGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMI7/QmAKKsrGuwmYgAgEQgB5Zu9jKjKh1+ZBKtAGGbPE8j+h119pUilXUF+kpzDw=
+  auth_header_value: encrypted$AQICAHhpFcIXIhU6d93x5dEW8mdH+GAoJET0G2RkVqkI5vH/4QGXQHn+x6wU5jvixyQa8lLkAAAAYTBfBgkqhkiG9w0BBwagUjBQAgEAMEsGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMnc1z/vpe0SmuavdSAgEQgB4aeMFWQVzHwsKynKcxdvSUJGO1E2GogFb91htByz0=
+  authentication_key: Cookie
   authentication_mode: header-cookie
+  authentication_value: ${{ jit_secrets.api_scan_authentication_value }}
   exclude_paths: []
   target_url: https://api.staging1.jit.io/openapi.json
   type: api
