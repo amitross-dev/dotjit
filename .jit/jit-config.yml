@@ -9,3 +9,15 @@ applications:
   exclude_paths: []
   target_url: https://api.staging.jit.io/openapi.json
   type: api
+- api_domain: api.staging.jit.io
+  application_name: bar
+  authentication_mode: selenium
+  exclude_paths: []
+  login_page_url: https://api.staging.jit.io/login
+  password: encrypted$AQICAHhpFcIXIhU6d93x5dEW8mdH+GAoJET0G2RkVqkI5vH/4QEfQVp2ckA41TlXCSlfo2GyAAAAYTBfBgkqhkiG9w0BBwagUjBQAgEAMEsGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMfsXc8Y469Vqi6PYlAgEQgB587jZGYTYtSrEerUHGpxBfE55uXHq3AkFBfWVgADc=
+  password_css_selector: ''
+  password_ref: ${{ jit_secrets.web_scan_password }}
+  target_url: https://api.staging.jit.io
+  type: web
+  username: foo
+  username_css_selector: ''
