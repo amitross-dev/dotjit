@@ -2,7 +2,7 @@ applications:
 - api_domain: api.staging.jit.io
   application_name: foo
   auth_header_name: Cookie
-  auth_header_value: encrypted$AQICAHhpFcIXIhU6d93x5dEW8mdH+GAoJET0G2RkVqkI5vH/4QGfinWNulcz7h2V53auZ31ZAAAAYTBfBgkqhkiG9w0BBwagUjBQAgEAMEsGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMOTwiiwxKXfPEGa8SAgEQgB7r7VNLDvJo1reNV5l4pcTDbZNL6v6bcH4wwUMWYBY=
+  auth_header_value: encrypted$AQICAHhpFcIXIhU6d93x5dEW8mdH+GAoJET0G2RkVqkI5vH/4QHGoG7hPmRSL3KeGvGxUPLiAAAAYTBfBgkqhkiG9w0BBwagUjBQAgEAMEsGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMI7/QmAKKsrGuwmYgAgEQgB5Zu9jKjKh1+ZBKtAGGbPE8j+h119pUilXUF+kpzDw=
   authentication_key: Cookie
   authentication_mode: header-cookie
   authentication_value: ${{ jit_secrets.api_scan_authentication_value }}
@@ -14,7 +14,7 @@ applications:
   authentication_mode: selenium
   exclude_paths: []
   login_page_url: https://api.staging.jit.io/login
-  password: encrypted$AQICAHhpFcIXIhU6d93x5dEW8mdH+GAoJET0G2RkVqkI5vH/4QEfQVp2ckA41TlXCSlfo2GyAAAAYTBfBgkqhkiG9w0BBwagUjBQAgEAMEsGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMfsXc8Y469Vqi6PYlAgEQgB587jZGYTYtSrEerUHGpxBfE55uXHq3AkFBfWVgADc=
+  password: encrypted$AQICAHhpFcIXIhU6d93x5dEW8mdH+GAoJET0G2RkVqkI5vH/4QESAzf/38aa2Ftnk74ogkAlAAAAYTBfBgkqhkiG9w0BBwagUjBQAgEAMEsGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMUKSLa6EYTdCZa7HrAgEQgB70kQhAAeQMeLIuQxMEG8NRdu2gd8INQfoB8vxNGBQ=
   password_css_selector: ''
   password_ref: ${{ jit_secrets.web_scan_password }}
   target_url: https://api.staging.jit.io
